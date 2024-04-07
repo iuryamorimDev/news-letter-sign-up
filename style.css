@@ -88,3 +88,103 @@ body {
   background-color: rgba(255, 98, 87, 0.2);
   border: 1px solid var(--tomato);
 }
+
+.form-item button {
+  cursor: pointer;
+  background: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+
+.form-item button:hover {
+  background: linear-gradient(
+    127deg,
+    rgba(255, 63, 124, 1) 40%,
+    rgba(255, 154, 34, 1)
+  );
+}
+
+.right {
+  text-align: right;
+}
+
+.confirmed-message {
+  display: none;
+  line-height: 1.2;
+}
+.confirmed-message.active {
+  display: block;
+}
+
+.confirmed-message img {
+  width: 80px;
+}
+
+.confirmed-message h2 {
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+
+.confirmed-message p {
+  margin: 2rem 0;
+}
+.confirmed-message button {
+  cursor: pointer;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.confirmed-message button:hover {
+  background: linear-gradient(
+    127deg,
+    rgba(255, 63, 124, 1) 40%,
+    rgba(255, 154, 34, 1) 70%
+  );
+}
+#user-email {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: initial;
+    line-height: 1.4;
+  }
+
+  .container {
+    width: 100%;
+    height: initial;
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+  .container.success {
+    display: block;
+    padding: initial;
+  }
+  .left {
+    padding: 1rem 2rem;
+    grid-row: 2;
+  }
+  .left-info ul li {
+    margin-bottom: 1rem;
+  }
+  .right img {
+    width: 100%;
+  }
+  .confirmed-message.active {
+    height: 100vh;
+    padding: 14rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .confirmed-message button {
+    margin-top: auto;
+  }
+}
