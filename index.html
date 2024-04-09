@@ -41,7 +41,7 @@
       </form>
     </div>
 
-    <div class="right">
+    <div id="right" class="right">
       <picture>
         <source media="(max-width: 768px)" srcset="images/illustration-sign-up-desktop.svg">
         <img src="./images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
@@ -61,9 +61,10 @@
 
 
   </div>
+  <script src="./myscripts.js"></script>
 
 
-  <script>
+  <!-- <script>
     const containerEl = document.getElementById("container");
     const leftEl = document.getElementById("left");
     const rightEl = document.getElementById("right");
@@ -90,7 +91,7 @@
 
     submitBtnEl.addEventListener("click", (e) => {
       e.preventDefault();
-      const email = emailInput.Value.trim();
+      const email = emailInput.value.trim();
 
       if (validateEmail(email)) {
         formSuccess();
@@ -111,7 +112,7 @@
       containerEl.classList.remove("success");
       confirmedMessageEl.classList.remove("active");
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

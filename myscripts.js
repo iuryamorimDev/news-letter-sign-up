@@ -24,7 +24,7 @@ function validateEmail(email) {
 
 submitBtnEl.addEventListener("click", (e) => {
   e.preventDefault();
-  const email = emailInput.Value.trim();
+  const email = emailInput.value.trim();
 
   if (validateEmail(email)) {
     formSuccess();

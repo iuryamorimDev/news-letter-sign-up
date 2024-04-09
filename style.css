@@ -42,7 +42,8 @@ body {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
 }
-.left-info p {
+.left-info p,
+.left-info ul {
   margin-bottom: 1.5rem;
 }
 .left-info ul li {
@@ -123,7 +124,7 @@ body {
 }
 
 .confirmed-message h2 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-top: 2rem;
 }
 
@@ -183,6 +184,7 @@ body {
     padding: 14rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .confirmed-message button {
     margin-top: auto;
